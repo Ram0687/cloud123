@@ -119,6 +119,6 @@ resource "aws_nat_gateway" "my_ngw" {
     subnet_id = aws_subnet.pub_sbnt.id
     allocation_id = aws_eip.my_eip.id
     tags = {
-        name = "my_ngw"
+        name = "NAT_GATEWAY"
     }
 }
